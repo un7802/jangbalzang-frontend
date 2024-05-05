@@ -1,0 +1,70 @@
+@use '@/styles/responsive.scss' as *;
+
+.rootLayout {
+    width: 100%;
+    height: 100%;
+    
+    @include isMobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
+
+.left {
+    position: fixed;
+    left: calc(50vw - 70rem);
+    width: 70rem;
+    height: 100%;
+    background-color: #F7F7F7;
+
+    @include isMobile {
+        display: none;
+    }
+}
+
+.content {
+    z-index: 1;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    @include isMobile {
+        width: 100%;
+    }
+
+    @include isDesktop {
+        width: 43rem;
+        left: 50%;
+    }
+}
+
+.right {
+    position: fixed;
+    background-color: #F7F7F7;
+
+    @include isMobile {
+        display:  none;
+    }
+}
+
+.registerButton {
+    width: calc(100% - 12px);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.20);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 12px;
+    cursor: pointer;
+}

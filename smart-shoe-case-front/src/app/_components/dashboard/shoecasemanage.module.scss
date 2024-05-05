@@ -1,0 +1,44 @@
+
+.shoeCaseManageRoot {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.20);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    gap: 20px;
+
+    .heading {
+        font-size: 14px;
+        color: #000;
+        font-weight: 400;
+    }
+
+    .rows {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .rowItemRoot {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .itemText {
+        color: #000;
+        font-size: 10px;
+        font-weight: 400;
+    }
+
+    .circle {
+        width: 44px;
+        height: 44px;
+        border-radius: 50px;
+        box-shadow: 0px 1px 6px 0px rgba(151, 164, 224);
+    }
+}
